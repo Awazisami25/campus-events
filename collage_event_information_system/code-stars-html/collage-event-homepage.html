@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Event Information System</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="codesstars-styles/home_page.css">
+</head>
+<body>
+
+     <header class="navagation_campus">
+
+    <div class="campus_navagation">
+
+        <div class="campus_logo">
+            <img src="code_stars_photos/code-stars_logo.png" alt="campuslogo">
+        </div>
+
+        <button id="mobileMenuButton" class="mobile_menu_button">
+            ☰
+        </button>
+
+        <div class="campus_formalitise">
+
+            <a href="collage-event-homepage.html">Home</a>
+            <a href="about_campus.html">About</a>
+            <a href="#events">Events</a>
+            <a href="campus_gallary.html">Gallery</a>
+            <a href="campus_feedback.html">Feedback</a>
+            <a href="#contact">Contact</a>
+
+        </div>
+
+        <div class="eplore_events">
+            <button id="exploreEventsButton">
+                Resgister Now
+            </button>
+        </div>
+
+    </div>
+
+</header>
+
+
+     <!-- HERO  -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="hero-small-text">
+                CONNECT
+                <span>•</span>
+                ENGAGE
+                <span>•</span>
+                GROW
+            </p>
+
+            <h1>
+                Your Campus,<br>
+                Your Events
+            </h1>
+
+            <p class="hero-description">
+                Discover upcoming events, explore past memories,
+                and stay connected with your campus community.
+            </p>
+
+            <a href="#events" class="explore-button">
+                Explore Events
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+
+    </section>
+
+
+        <!-- FILTER AREA  -->
+
+    <section class="filter-section">
+
+        <div class="filters">
+            <!-- Search -->
+            <div class="filter search-container">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search events, clubs, or organizations"
+                >
+            </div>
+
+
+            <!-- Category -->
+            <div class="filter">
+                <select id="categoryFilter">
+                    <option value="all">
+                        All Categories
+                    </option>
+
+                    <option value="academic">
+                        Academic
+                    </option>
+
+                    <option value="sports">
+                        Sports
+                    </option>
+
+                    <option value="social">
+                        Social
+                    </option>
+
+                    <option value="career">
+                        Career
+                    </option>
+
+                </select>
+
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+
+
+            <!-- Department -->
+            <div class="filter">
+
+                <select id="departmentFilter">
+
+                    <option value="all">
+                        All Departments
+                    </option>
+
+                    <option value="computer">
+                        Computer Science
+                    </option>
+
+                    <option value="engineering">
+                        Engineering
+                    </option>
+
+                    <option value="business">
+                        Business
+                    </option>
+
+                    <option value="arts">
+                        Arts
+                    </option>
+
+                </select>
+
+                <i class="fa-solid fa-chevron-down"></i>
+
+            </div>
+
+
+            <!-- Search button -->
+            <button
+                class="search-button"
+                id="searchButton"
+            >
+                Search
+            </button>
+        </div>
+    </section>
+
+
+        <!-- EVENTS  -->
+
+    <main class="events-section" id="events">
+        <div class="events-heading">
+            <h2>
+                Upcoming Events
+            </h2>
+
+            <a href="campus_events.html">
+                View All Events
+                <span>→</span>
+            </a>
+
+        </div>
+
+
+        <div class="events-grid" id="eventsGrid">
+
+
+            <!-- EVENT 1 -->
+
+            <article
+                class="event-card"
+                data-category="academic"
+                data-department="computer"
+            >
+
+                <img
+                    src="code_stars_photos/innavation.png" alt="Campus Innovation Day">
+
+                <div class="event-content">
+
+                    <p class="event-date">
+                        OCT 12 · 10:00 AM
+                    </p>
+
+                    <h3>
+                        Campus Innovation Day
+                    </h3>
+
+                    <p class="event-description">
+                        Meet students, creators and teams
+                        building exciting new ideas.
+                    </p>
+
+                    <div class="event-footer">
+
+                        <span>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Main Hall
+                        </span>
+
+                        <span>
+                            Free
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- EVENT 2 -->
+
+            <article
+                class="event-card"
+                data-category="social"
+                data-department="business"
+            >
+
+                <img
+                    src="code_stars_photos/innavation2.png" alt="Student Community Meetup">
+
+                <div class="event-content">
+
+                    <p class="event-date">
+                        OCT 16 · 2:00 PM
+                    </p>
+
+                    <h3>
+                        Student Community Meetup
+                    </h3>
+
+                    <p class="event-description">
+                        Connect with other students and
+                        discover campus organizations.
+                    </p>
+
+                    <div class="event-footer">
+
+                        <span>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Student Center
+                        </span>
+
+                        <span>
+                            Free
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- EVENT 3 -->
+
+            <article
+                class="event-card"
+                data-category="career"
+                data-department="engineering"
+            >
+
+                <img
+                    src="code_stars_photos/innavation3.png" alt="Career and Networking Night">
+
+                <div class="event-content">
+                    <p class="event-date">
+                        OCT 20 · 4:30 PM
+                    </p>
+                    <h3>
+                        Career & Networking Night
+                    </h3>
+                    <p class="event-description">
+                        Meet professionals and learn about
+                        opportunities beyond campus.
+                    </p>
+
+                    <div class="event-footer">
+                        <span>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Conference Room
+                        </span>
+                        <span>
+                            Register
+                        </span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+
+    <main class="events-section" id="events">
+        <div class="events-grid" id="eventsGrid">
+
+            <!-- EVENT 1 -->
+
+            <article
+                class="event-card"
+                data-category="academic"
+                data-department="computer"
+            >
+
+                <img
+                    src="code_stars_photos/innavation4.png" alt="Campus Innovation Day">
+
+                <div class="event-content">
+
+                    <p class="event-date">
+                        NOV 19 · 10:00 AM
+                    </p>
+
+                    <h3>
+                        Academic & Technology
+                    </h3>
+
+                    <p class="event-description">
+                        Students learn HTML, CSS, JavaScript, and modern web development.
+                    </p>
+
+                    <div class="event-footer">
+
+                        <span>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Web Development Workshop
+                        </span>
+
+                        <span>
+                            Free
+                        </span>
+                    </div>
+                </div>
+            </article>
+
+
+            <!-- EVENT 2 -->
+
+            <article
+                class="event-card"
+                data-category="social"
+                data-department="business"
+            >
+
+                <img
+                    src="code_stars_photos/innavation5.png" alt="Student Community Meetup">
+
+                <div class="event-content">
+
+                    <p class="event-date">
+                        NOV 12 · 2:00 PM
+                    </p>
+
+                    <h3>
+                        Career & Job Fair
+                    </h3>
+
+                    <p class="event-description">
+                        Connect with other students and
+                        discover campus organizations.
+                    </p>
+
+                    <div class="event-footer">
+
+                        <span>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Main Auditorium
+                        </span>
+
+                        <span>
+                            Free
+                        </span>
+
+                    </div>
+
+                </div>
+            </article>
+
+
+            <!-- EVENT 3 -->
+
+            <article
+                class="event-card"
+                data-category="career"
+                data-department="engineering"
+            >
+
+                <img
+                    src="code_stars_photos/innavation8.png" alt="Career and Networking Night">
+
+                <div class="event-content">
+                    <p class="event-date">
+                        NOV 26 · 4:30 PM
+                    </p>
+                    <h3>
+                        Career & Job Fair
+                    </h3>
+                    <p class="event-description">
+                        Meet employers, discover career opportunities, submit your CV, and learn about different career paths.
+                    </p>
+
+                    <div class="event-footer">
+                        <span>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Campus Lounge
+                        </span>
+                        <span>
+                            Register
+                        </span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+
+
+
+    
+     <!-- CATEGORIES AND DEPARTMENTS -->
+
+
+<section class="campus-info">
+
+    <!-- EVENT CATEGORIES -->
+
+    <div class="categories-section">
+
+        <div class="section-small-title">
+            <h2>Event Categories</h2>
+        </div>
+
+        <div class="categories-grid">
+
+            <div class="category-card">
+                <div class="category-icon">
+                    <i class="fa-solid fa-book-open"></i>
+                </div>
+
+                <p>Academic</p>
+            </div>
+
+
+            <div class="category-card">
+                <div class="category-icon">
+                    <i class="fa-solid fa-people-group"></i>
+                </div>
+
+                <p>Social</p>
+            </div>
+
+
+            <div class="category-card">
+                <div class="category-icon">
+                    <i class="fa-solid fa-clover"></i>
+                </div>
+
+                <p>Sports</p>
+            </div>
+
+
+            <div class="category-card">
+                <div class="category-icon">
+                    <i class="fa-solid fa-trophy"></i>
+                </div>
+
+                <p>Workshops</p>
+            </div>
+
+
+            <div class="category-card">
+                <div class="category-icon">
+                    <i class="fa-solid fa-trophy"></i>
+                </div>
+
+                <p>Competitions</p>
+            </div>
+
+
+            <div class="category-card">
+                <div class="category-icon">
+                    <i class="fa-solid fa-building"></i>
+                </div>
+
+                <p>Seminars</p>
+            </div>
+
+
+            <div class="category-card">
+                <div class="category-icon">
+                    <i class="fa-solid fa-circle-info"></i>
+                </div>
+
+                <p>Other</p>
+            </div>
+
+        </div>
+
+
+        <!-- PAST EVENTS -->
+
+        <div class="past-events">
+
+            <div class="past-events-heading">
+
+                <h2>
+                    Past Events Gallery
+                </h2>
+
+                <a href="#">
+                    View Gallery →
+                </a>
+
+            </div>
+
+
+            <div class="gallery">
+
+                <a href="#" class="gallery-image">
+                    <img
+                        src="code_stars_photos/innavation10.png"
+                        alt="Past campus event"
+                    >
+                </a>
+
+
+                <a href="#" class="gallery-image">
+                    <img
+                        src="code_stars_photos/innavation9.png"
+                        alt="Past campus event"
+                    >
+                </a>
+
+
+                <a href="#" class="gallery-image">
+                    <img
+                        src="code_stars_photos/innavation11.png"
+                        alt="Past campus event"
+                    >
+                </a>
+
+
+                <a href="#" class="gallery-image">
+                    <img
+                        src="code_stars_photos/innavation10.png"
+                        alt="Past campus event"
+                    >
+                </a>
+
+
+                <a href="#" class="gallery-image">
+                    <img
+                        src="code_stars_photos/innavation6.png"
+                        alt="Past campus event"
+                    >
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         DEPARTMENTS
+    ========================= -->
+
+    <aside class="departments-section">
+
+        <h2>
+            Departments
+        </h2>
+
+
+        <div class="department-list">
+
+            <a href="#">
+                Computer Science & IT
+                <span>›</span>
+            </a>
+
+
+            <a href="#">
+                Business Administration
+                <span>›</span>
+            </a>
+
+
+            <a href="#">
+                Engineering
+                <span>›</span>
+            </a>
+
+
+            <a href="#">
+                Arts & Humanities
+                <span>›</span>
+            </a>
+
+
+            <a href="#">
+                Science & Mathematics
+                <span>›</span>
+            </a>
+
+        </div>
+    </aside>
+</section>
+
+
+
+<!-- =========================================
+     CONTACT SECTION
+========================================= -->
+
+<section class="contact-section" id="contact">
+
+    <div class="contact-container">
+
+        <!-- LEFT SIDE -->
+
+        <div class="contact-info">
+
+            <p class="contact-label">
+                GET IN TOUCH
+            </p>
+
+            <h2>
+                Have a question?
+                <br>
+                We'd love to hear from you.
+            </h2>
+
+            <p class="contact-description">
+                Have questions about an event, department,
+                organization, or anything happening on campus?
+                Send us a message and we'll get back to you.
+            </p>
+
+
+            <!-- EMAIL -->
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+
+                <div>
+                    <h3>Email</h3>
+
+                    <a href="mailto:info@campus.com">
+                        info@campus.com
+                    </a>
+                </div>
+
+            </div>
+
+
+            <!-- PHONE -->
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+
+                <div>
+                    <h3>Phone</h3>
+
+                    <a href="tel:+2348000000000">
+                        +234 800 000 0000
+                    </a>
+                </div>
+
+            </div>
+
+
+            <!-- LOCATION -->
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+
+                <div>
+                    <h3>Campus Office</h3>
+
+                    <p>
+                        Student Center,<br>
+                        Main Campus
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT SIDE -->
+
+        <div class="contact-form-container">
+
+            <h2>
+                Send us a message
+            </h2>
+
+            <form id="contactForm">
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Your Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Enter your name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="subject">
+                        Subject
+                    </label>
+
+                    <input
+                        type="text"
+                        id="subject"
+                        placeholder="What is your message about?"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="message">
+                        Message
+                    </label>
+
+                    <textarea
+                        id="message"
+                        rows="5"
+                        placeholder="Write your message..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="send-message-button"
+                >
+
+                    Send Message
+
+                    <i class="fa-solid fa-paper-plane"></i>
+
+                </button>
+
+            </form>
+
+            <p
+                class="form-message"
+                id="formMessage"
+            ></p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-brand">
+
+            <div class="footer-logo">
+
+                <div class="footer-logo-icon">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+
+                <span>Campus</span>
+
+            </div>
+
+            <p>
+                Connecting students, events,
+                organizations, and opportunities.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <a href="#">Home</a>
+            <a href="#">Events</a>
+            <a href="#">Contact</a>
+            <a href="#">About</a>
+
+        </div>
+
+
+        <div class="social-links">
+
+            <a href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Campus Events. All rights reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+<script src="codestars-js/home_page.js"></script>
+</body>
+</html>

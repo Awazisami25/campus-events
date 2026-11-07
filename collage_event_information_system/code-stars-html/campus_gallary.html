@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Campus Events</title>
+    <link rel="stylesheet" href="codesstars-styles/campus_gallary.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+
+<!-- =========================================
+     NAVIGATION
+========================================= -->
+
+<header class="navagation_campus">
+
+    <div class="campus_navagation">
+
+        <div class="campus_logo">
+
+            <img src="code_stars_photos/code-stars_logo.png"
+                 alt="campuslogo">
+
+        </div>
+
+
+        <button id="mobileMenuButton"
+                class="mobile_menu_button">
+
+            ☰
+
+        </button>
+
+
+        <div class="campus_formalitise">
+
+            <a href="collage-event-homepage.html">Home</a>
+            <a href="about_campus.html">About</a>
+            <a href="campus_events.html">Events</a>
+            <a href="campus_gallary.html">Gallery</a>
+            <a href="campus_feedback.html">Feedback</a>
+            <a href="compus_contact.html">Contact</a>
+        </div>
+
+
+        <div class="eplore_events">
+
+            <button onclick="window.location.href='events.html'">
+
+                Explore Events
+
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================================
+     GALLERY HERO
+========================================= -->
+
+<section class="gallery_hero">
+
+    <div class="gallery_hero_content">
+
+        <p class="section_label">
+            CAMPUS GALLERY
+        </p>
+
+        <h1>
+            Moments That
+            <span>Bring Us Together.</span>
+        </h1>
+
+        <p>
+            Explore memories from events, activities,
+            competitions and everyday campus life.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     GALLERY INTRO
+========================================= -->
+
+<section class="gallery_intro">
+
+    <div class="section_heading">
+
+        <p class="section_label">
+            OUR MEMORIES
+        </p>
+
+        <h2>
+            Life On <span>Campus</span>
+        </h2>
+
+        <p>
+            From classrooms to celebrations, every
+            moment tells a story.
+        </p>
+
+    </div>
+
+
+
+    <!-- =========================================
+         FILTER BUTTONS
+    ========================================= -->
+
+    <div class="gallery_filters">
+
+        <button class="gallery_filter active"
+                data-filter="all">
+
+            All
+
+        </button>
+
+        <button class="gallery_filter"
+                data-filter="academic">
+
+            Academic
+
+        </button>
+
+        <button class="gallery_filter"
+                data-filter="sports">
+
+            Sports
+
+        </button>
+
+        <button class="gallery_filter"
+                data-filter="social">
+
+            Social
+
+        </button>
+
+        <button class="gallery_filter"
+                data-filter="workshop">
+
+            Workshops
+
+        </button>
+
+        <button class="gallery_filter"
+                data-filter="campus">
+
+            Campus Life
+
+        </button>
+
+    </div>
+
+
+
+    <!-- =========================================
+         GALLERY GRID
+    ========================================= -->
+
+    <div class="gallery_grid">
+
+
+        <!-- IMAGE 1 -->
+
+        <div class="gallery_item large"
+             data-category="academic">
+
+            <img src="code_stars_photos/gallary9.png"
+                 alt="Students at an academic event">
+
+            <div class="gallery_overlay">
+
+                <div>
+
+                    <span>
+                        Academic
+                    </span>
+
+                    <h3>
+                        Academic Excellence
+                    </h3>
+
+                    <button class="view_image">
+
+                        <i class="fa-solid fa-expand"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- IMAGE 2 -->
+
+        <div class="gallery_item"
+             data-category="sports">
+
+            <img src="code_stars_photos/gallary3.png"
+                 alt="Campus sports event">
+
+            <div class="gallery_overlay">
+
+                <div>
+
+                    <span>
+                        Sports
+                    </span>
+
+                    <h3>
+                        Campus Sports
+                    </h3>
+
+                    <button class="view_image">
+
+                        <i class="fa-solid fa-expand"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- IMAGE 3 -->
+
+        <div class="gallery_item"
+             data-category="social">
+
+            <img src="code_stars_photos/gallary1.png"
+                 alt="Students at social event">
+
+            <div class="gallery_overlay">
+
+                <div>
+
+                    <span>
+                        Social
+                    </span>
+
+                    <h3>
+                        Student Social
+                    </h3>
+
+                    <button class="view_image">
+
+                        <i class="fa-solid fa-expand"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- IMAGE 4 -->
+
+        <div class="gallery_item"
+             data-category="workshop">
+
+            <img src="code_stars_photos/gallary7.png"
+                 alt="Students attending workshop">
+
+            <div class="gallery_overlay">
+
+                <div>
+
+                    <span>
+                        Workshop
+                    </span>
+
+                    <h3>
+                        Creative Workshop
+                    </h3>
+
+                    <button class="view_image">
+
+                        <i class="fa-solid fa-expand"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- IMAGE 5 -->
+
+        <div class="gallery_item large"
+             data-category="campus">
+
+            <img src="code_stars_photos/gallary.png"
+                 alt="Campus buildings">
+
+            <div class="gallery_overlay">
+
+                <div>
+
+                    <span>
+                        Campus Life
+                    </span>
+
+                    <h3>
+                        Around Campus
+                    </h3>
+
+                    <button class="view_image">
+
+                        <i class="fa-solid fa-expand"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- IMAGE 6 -->
+
+        <div class="gallery_item"
+             data-category="sports">
+
+            <img src="code_stars_photos/gallary4.png"
+                 alt="Students playing sports">
+
+            <div class="gallery_overlay">
+
+                <div>
+
+                    <span>
+                        Sports
+                    </span>
+
+                    <h3>
+                        Championship Day
+                    </h3>
+
+                    <button class="view_image">
+
+                        <i class="fa-solid fa-expand"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- IMAGE 7 -->
+
+        <div class="gallery_item"
+             data-category="academic">
+
+            <img src="code_stars_photos/gallary5.png"
+                 alt="University lecture">
+
+            <div class="gallery_overlay">
+
+                <div>
+
+                    <span>
+                        Academic
+                    </span>
+
+                    <h3>
+                        Learning Together
+                    </h3>
+
+                    <button class="view_image">
+
+                        <i class="fa-solid fa-expand"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- IMAGE 8 -->
+
+        <div class="gallery_item"
+             data-category="social">
+
+            <img src="code_stars_photos/gallary10.png"
+                 alt="Students celebrating">
+
+            <div class="gallery_overlay">
+
+                <div>
+
+                    <span>
+                        Social
+                    </span>
+
+                    <h3>
+                        Campus Celebration
+                    </h3>
+
+                    <button class="view_image">
+
+                        <i class="fa-solid fa-expand"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- IMAGE 9 -->
+
+        <div class="gallery_item"
+             data-category="campus">
+
+            <img src="code_stars_photos/gallary11.png"
+                 alt="Students walking around campus">
+
+            <div class="gallery_overlay">
+                <div>
+
+                    <span>
+                        Campus Life
+                    </span>
+
+                    <h3>
+                        Everyday Campus Life
+                    </h3>
+
+                    <button class="view_image">
+
+                        <i class="fa-solid fa-expand"></i>
+
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     IMAGE VIEWER
+========================================= -->
+
+<div class="image_viewer"
+     id="imageViewer">
+
+    <button class="close_viewer"
+            id="closeViewer">
+
+        <i class="fa-solid fa-xmark"></i>
+    </button>
+
+
+    <button class="viewer_previous"
+            id="previousImage">
+
+        <i class="fa-solid fa-chevron-left"></i>
+    </button>
+
+
+    <img id="viewerImage"
+         src=""
+         alt="Selected gallery image">
+
+
+    <button class="viewer_next"
+            id="nextImage">
+        <i class="fa-solid fa-chevron-right"></i>
+    </button>
+</div>
+
+
+
+<!-- =========================================
+     GALLERY CTA
+========================================= -->
+
+<section class="gallery_cta">
+
+    <div>
+
+        <p class="section_label">
+            CREATE YOUR OWN MEMORY
+        </p>
+
+        <h2>
+            Be Part Of The
+            <span>Next Story.</span>
+        </h2>
+
+        <p>
+            Discover upcoming events and create
+            memories worth remembering.
+        </p>
+
+        <a href="campus_events.html">
+            Explore Events
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+    </div>
+</section>
+
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-brand">
+            <img src="code_stars_photos/code-stars_logo.png"
+                 alt="Campus Events Logo">
+
+            <p>
+                Connecting students with
+                experiences that matter.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <h3>
+                Quick Links
+            </h3>
+
+            <a href="collage-event-homepage.html">
+                Home
+            </a>
+
+            <a href="about_campus.html">
+                About
+            </a>
+
+            <a href="campus_events.html">
+                Events
+            </a>
+
+            <a href="campus_gallary.html">
+                Gallery
+            </a>
+
+            <a href="index.html#contact">
+                Contact
+            </a>
+
+        </div>
+
+
+        <div class="social-links">
+
+            <h3>
+                Follow Us
+            </h3>
+
+            <div>
+
+                <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Campus Events. All rights reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+<script src="codestars-js/campus_gallary.js"></script>
+</body>
+</html>

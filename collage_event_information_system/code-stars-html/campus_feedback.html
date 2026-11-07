@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback | Campus Events</title>
+    <link rel="stylesheet" href="codesstars-styles/campus_feedback.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <header class="navagation_campus">
+
+        <div class="campus_navagation">
+
+            <div class="campus_logo">
+                <img
+                    src="code_stars_photos/code-stars_logo.png"
+                    alt="Campus Logo"
+                >
+            </div>
+
+            <button
+                class="mobile_menu_button"
+                id="mobileMenuButton"
+            >
+                ☰
+            </button>
+
+            <nav class="campus_formalitise">
+
+                <a href="collage-event-homepage.html">Home</a>
+                <a href="about_campus.html">About</a>
+                <a href="campus_events.html">Events</a>
+                <a href="campus_gallary.html">Gallery</a>
+                <a href="campus_feedback.html">Feedback</a>
+                <a href="compus_contact.html">Contact</a>
+
+            </nav>
+
+            <div class="eplore_events">
+                <button onclick="window.location.href='campus_events'">
+                    Explore Events
+                </button>
+            </div>
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         FEEDBACK HERO
+    ========================== -->
+
+    <section class="feedback_hero">
+
+        <div class="feedback_hero_content">
+
+            <p class="section_label">
+                YOUR VOICE MATTERS
+            </p>
+
+            <h1>
+                Share Your
+                <span>Feedback.</span>
+            </h1>
+
+            <p>
+                Tell us about your experience with campus events.
+                Your feedback helps us create better events,
+                activities and experiences for everyone.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FEEDBACK SECTION
+    ========================== -->
+
+    <section class="feedback_section">
+
+        <div class="feedback_container">
+
+            <div class="feedback_information">
+
+                <p class="section_label">
+                    WE WANT TO HEAR FROM YOU
+                </p>
+
+                <h2>
+                    Help Us Make
+                    <span>Campus Better.</span>
+                </h2>
+
+                <p>
+                    Whether you attended an event, participated
+                    in an activity, or simply have an idea,
+                    we would love to hear from you.
+                </p>
+
+                <div class="feedback_points">
+
+                    <div class="feedback_point">
+
+                        <div class="feedback_icon">
+                            ✓
+                        </div>
+
+                        <div>
+                            <h3>
+                                Tell Us Your Experience
+                            </h3>
+
+                            <p>
+                                Let us know what you enjoyed
+                                and what could be improved.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="feedback_point">
+
+                        <div class="feedback_icon">
+                            ★
+                        </div>
+
+                        <div>
+                            <h3>
+                                Rate Our Events
+                            </h3>
+
+                            <p>
+                                Give us a rating based on
+                                your overall experience.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="feedback_point">
+
+                        <div class="feedback_icon">
+                            +
+                        </div>
+
+                        <div>
+                            <h3>
+                                Share Your Ideas
+                            </h3>
+
+                            <p>
+                                Suggest new events or activities
+                                you would like to see.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================
+                 FEEDBACK FORM
+            ========================== -->
+
+            <div class="feedback_form_box">
+
+                <form id="feedbackForm">
+
+                    <div class="form_title">
+
+                        <h3>
+                            Send Your Feedback
+                        </h3>
+
+                        <p>
+                            It only takes a few minutes.
+                        </p>
+
+                    </div>
+
+
+                    <div class="form_group">
+
+                        <label for="feedbackName">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="feedbackName"
+                            placeholder="Enter your name"
+                        >
+
+                    </div>
+
+
+                    <div class="form_group">
+
+                        <label for="feedbackEmail">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="feedbackEmail"
+                            placeholder="Enter your email"
+                        >
+
+                    </div>
+
+                    <div class="form_group">
+
+                        <label>
+                            How would you rate your experience?
+                        </label>
+                                    
+                         <div class="rating_options">
+
+                          <button type="button" class="rating_button" data-rating="1">
+                              ⭐
+                          </button>
+                          <button type="button" class="rating_button" data-rating="2">
+                              ⭐
+                          </button>
+                          <button type="button" class="rating_button" data-rating="3">
+                              ⭐
+                          </button>
+                          <button type="button" class="rating_button" data-rating="4">
+                              ⭐
+                          </button>
+                          <button type="button" class="rating_button" data-rating="5">
+                              ⭐
+                          </button>
+                  </div>
+                        
+                        
+                        <p class="rating_text" id="ratingText">
+                            Select a rating
+                        </p>
+
+                    </div>
+
+
+                    <div class="form_group">
+
+                        <label for="feedbackCategory">
+                            Feedback Type
+                        </label>
+
+                        <select id="feedbackCategory">
+
+                            <option value="">
+                                Select feedback type
+                            </option>
+
+                            <option value="event">
+                                Event Experience
+                            </option>
+
+                            <option value="suggestion">
+                                Suggestion
+                            </option>
+
+                            <option value="website">
+                                Website
+                            </option>
+
+                            <option value="complaint">
+                                Complaint
+                            </option>
+
+                            <option value="other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form_group">
+
+                        <label for="feedbackMessage">
+                            Your Feedback
+                        </label>
+
+                        <textarea
+                            id="feedbackMessage"
+                            rows="6"
+                            maxlength="500"
+                            placeholder="Write your feedback here..."
+                        ></textarea>
+
+                        <div class="character_count">
+                            <span id="characterCount">0</span> / 500
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="submit_feedback"
+                    >
+                        Submit Feedback
+                        <span>→</span>
+                    </button>
+
+
+                    <p
+                        id="feedbackMessageDisplay"
+                        class="feedback_message"
+                    ></p>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FEEDBACK STATS
+    ========================== -->
+
+    <section class="feedback_stats">
+
+        <div class="stats_container">
+
+            <div class="stat_box">
+
+                <strong>
+                    500+
+                </strong>
+
+                <span>
+                    Students Reached
+                </span>
+
+            </div>
+
+
+            <div class="stat_box">
+
+                <strong>
+                    50+
+                </strong>
+
+                <span>
+                    Events Held
+                </span>
+
+            </div>
+
+
+            <div class="stat_box">
+
+                <strong>
+                    95%
+                </strong>
+
+                <span>
+                    Positive Experience
+                </span>
+
+            </div>
+
+
+            <div class="stat_box">
+
+                <strong>
+                    24/7
+                </strong>
+
+                <span>
+                    Feedback Welcome
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="campus_footer">
+
+        <div class="footer_container">
+
+            <div class="footer_about">
+
+                <img
+                    src="code_stars_photos/code-stars_logo.png"
+                    alt="Campus Logo"
+                >
+
+                <p>
+                    Connecting students through events,
+                    activities and unforgettable campus
+                    experiences.
+                </p>
+
+            </div>
+
+
+            <div class="footer_links">
+
+                <h3>Quick Links</h3>
+                <a href="collage-event-homepage.html"> Home</a>
+                <a href="about_campus.html">About</a>
+                <a href="campus_events.html">Events</a>
+                <a href="campus_gallary.html">Gallery</a>
+            </div>
+
+
+            <div class="footer_links">
+
+                <h3>Support</h3>
+                <a href="feedback.html">Feedback</a>
+                <a href="compus_contact.html">Contact</a>
+
+                <a href="#">
+                    Privacy Policy
+                </a>
+            </div>
+        </div>
+
+
+        <div class="footer_bottom">
+            <p>
+                © 2026 Campus Events. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+<script src="codestars-js/campus_feedback.js"></script>
+</body>
+</html>

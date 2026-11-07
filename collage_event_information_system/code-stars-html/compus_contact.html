@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Campus Events</title>
+    <link rel="stylesheet" href="codesstars-styles/campus_contact.css">
+</head>
+<body>
+
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <header class="navagation_campus">
+
+        <div class="campus_navagation">
+
+            <div class="campus_logo">
+
+                <img
+                    src="code_stars_photos/code-stars_logo.png"
+                    alt="Campus Logo"
+                >
+
+            </div>
+
+
+            <button
+                class="mobile_menu_button"
+                id="mobileMenuButton"
+            >
+                ☰
+            </button>
+
+
+            <nav class="campus_formalitise">
+
+                <a href="collage-ehomepage.html">
+                    Home
+                </a>
+
+                <a href="about_campus.html">
+                    About
+                </a>
+
+                <a href="campus_events.html">
+                    Events
+                </a>
+
+                <a href="campus_gallary.html">
+                    Gallery
+                </a>
+
+                <a href="campus_feedback.html">
+                    Feedback
+                </a>
+
+                <a href="compus_contact.html" class="active">
+                    Contact
+                </a>
+
+            </nav>
+
+
+            <div class="eplore_events">
+
+                <button onclick="window.location.href='campus_contact.html'">
+                    Explore Events
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <section class="contact_hero">
+
+        <div class="contact_hero_content">
+
+            <p class="section_label">
+                GET IN TOUCH
+            </p>
+
+            <h1>
+                Let's Start a
+                <span>Conversation.</span>
+            </h1>
+
+            <p>
+                Have a question about an event, want to collaborate,
+                or simply want to learn more about Campus Events?
+                We'd love to hear from you.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         CONTACT SECTION
+    ========================== -->
+
+    <section class="contact_section">
+
+        <div class="contact_container">
+
+
+            <!-- =========================
+                 CONTACT INFORMATION
+            ========================== -->
+
+            <div class="contact_information">
+
+                <p class="section_label">
+                    CONTACT INFORMATION
+                </p>
+
+                <h2>
+                    We're Here
+                    <span>To Help.</span>
+                </h2>
+
+                <p class="contact_intro">
+                    Whether you have a question, suggestion,
+                    partnership idea or need assistance with
+                    an event, feel free to reach out to us.
+                </p>
+
+
+                <div class="contact_details">
+
+
+                    <div class="contact_detail">
+
+                        <div class="contact_icon">
+                            ✉
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Email Us
+                            </h3>
+
+                            <p>
+                                info@campusevents.com
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact_detail">
+
+                        <div class="contact_icon">
+                            ☎
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Call Us
+                            </h3>
+
+                            <p>
+                                +234 800 123 4567
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact_detail">
+
+                        <div class="contact_icon">
+                            📍
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Visit Us
+                            </h3>
+
+                            <p>
+                                Campus Events Centre
+                                <br>
+                                University Campus
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact_detail">
+
+                        <div class="contact_icon">
+                            ◷
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Opening Hours
+                            </h3>
+
+                            <p>
+                                Monday – Friday
+                                <br>
+                                8:00 AM – 5:00 PM
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- =========================
+                 CONTACT FORM
+            ========================== -->
+
+            <div class="contact_form_box">
+
+                <div class="form_title">
+
+                    <h3>
+                        Send Us a Message
+                    </h3>
+
+                    <p>
+                        Fill out the form and we'll get back
+                        to you as soon as possible.
+                    </p>
+
+                </div>
+
+
+                <form id="contactForm">
+
+
+                    <div class="form_row">
+
+
+                        <div class="form_group">
+
+                            <label for="contactName">
+                                Full Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="contactName"
+                                placeholder="Your name"
+                            >
+
+                        </div>
+
+
+                        <div class="form_group">
+
+                            <label for="contactEmail">
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="contactEmail"
+                                placeholder="Your email"
+                            >
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="form_group">
+
+                        <label for="contactSubject">
+                            Subject
+                        </label>
+
+                        <input
+                            type="text"
+                            id="contactSubject"
+                            placeholder="What would you like to talk about?"
+                        >
+
+                    </div>
+
+
+
+                    <div class="form_group">
+
+                        <label for="contactMessage">
+                            Message
+                        </label>
+
+                        <textarea
+                            id="contactMessage"
+                            rows="7"
+                            maxlength="1000"
+                            placeholder="Write your message here..."
+                        ></textarea>
+
+                        <div class="character_count">
+
+                            <span id="characterCount">
+                                0
+                            </span>
+                            / 1000
+
+                        </div>
+
+                    </div>
+
+
+
+                    <button
+                        type="submit"
+                        class="send_message_button"
+                    >
+
+                        Send Message
+
+                        <span>
+                            →
+                        </span>
+
+                    </button>
+
+
+                    <p
+                        id="contactMessageDisplay"
+                        class="contact_message"
+                    ></p>
+
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         FAQ
+    ========================== -->
+
+    <section class="faq_section">
+
+        <div class="faq_container">
+
+            <div class="faq_heading">
+
+                <p class="section_label">
+                    QUICK ANSWERS
+                </p>
+
+                <h2>
+                    Frequently Asked
+                    <span>Questions.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="faq_list">
+
+
+                <div class="faq_item">
+
+                    <button class="faq_question">
+
+                        How can I register for an event?
+
+                        <span>
+                            +
+                        </span>
+
+                    </button>
+
+                    <div class="faq_answer">
+
+                        <p>
+                            Visit our Events page, choose the event
+                            you are interested in and follow the
+                            registration instructions.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="faq_item">
+
+                    <button class="faq_question">
+
+                        Can I suggest a new campus event?
+
+                        <span>
+                            +
+                        </span>
+
+                    </button>
+
+                    <div class="faq_answer">
+
+                        <p>
+                            Absolutely. Send us your idea using
+                            the contact form and our team will
+                            review your suggestion.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="faq_item">
+
+                    <button class="faq_question">
+
+                        Can students organize their own events?
+
+                        <span>
+                            +
+                        </span>
+
+                    </button>
+
+                    <div class="faq_answer">
+
+                        <p>
+                            Students can contact the campus events
+                            team to discuss event ideas, requirements
+                            and available resources.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="faq_item">
+
+                    <button class="faq_question">
+
+                        How long does it take to receive a reply?
+
+                        <span>
+                            +
+                        </span>
+
+                    </button>
+
+                    <div class="faq_answer">
+
+                        <p>
+                            We normally aim to respond to messages
+                            during our working hours.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="campus_footer">
+
+        <div class="footer_container">
+
+
+            <div class="footer_about">
+
+                <img
+                    src="code_stars_photos/code-stars_logo.png"
+                    alt="Campus Logo"
+                >
+
+                <p>
+                    Connecting students through events,
+                    activities and unforgettable campus
+                    experiences.
+                </p>
+
+            </div>
+
+
+
+            <div class="footer_links">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="events.html">
+                    Events
+                </a>
+
+                <a href="gallery.html">
+                    Gallery
+                </a>
+
+            </div>
+
+
+
+            <div class="footer_links">
+
+                <h3>
+                    Support
+                </h3>
+
+                <a href="feedback.html">
+                    Feedback
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+                <a href="#">
+                    Privacy Policy
+                </a>
+
+            </div>
+        </div>
+
+
+        <div class="footer_bottom">
+            <p>
+                © 2026 Campus Events. All rights reserved.
+            </p>
+        </div>
+
+    </footer>
+
+
+
+    <script src="codestars-js/campus_contact.js"></script>
+</body>
+</html>

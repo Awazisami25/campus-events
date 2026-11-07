@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Events | Campus Events</title>
+    <link rel="stylesheet" href="codesstars-styles/campus_events.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+
+<!-- =========================================
+     NAVIGATION
+========================================= -->
+
+<header class="navagation_campus">
+
+    <div class="campus_navagation">
+
+        <div class="campus_logo">
+
+            <img src="code_stars_photos/code-stars_logo.png"
+                 alt="campuslogo">
+
+        </div>
+
+
+        <button id="mobileMenuButton"
+                class="mobile_menu_button">
+
+            ☰
+
+        </button>
+
+
+        <div class="campus_formalitise">
+
+            <a href="collage-event-homepage.html">Home</a>
+            <a href="about_campus.html">About</a>
+            <a href="campus_events.html">Events</a>
+            <a href="campus_gallary.html">Gallery</a>
+            <a href="campus_feedback.html">Feedback</a>
+            <a href="compus_contact.html">Contact</a>
+        </div>
+
+
+        <div class="eplore_events">
+
+            <button onclick="window.location.href='events.html'">
+                Explore Events
+            </button>
+        </div>
+    </div>
+</header>
+
+
+
+<!-- =========================================
+     EVENTS HERO
+========================================= -->
+
+<section class="events_hero">
+
+    <div class="events_hero_content">
+        <p class="section_label">
+            CAMPUS EVENTS
+        </p>
+
+        <h1>
+            Discover What's
+            <span>Happening.</span>
+        </h1>
+
+        <p>
+            Explore academic, social, sporting and
+            creative events happening across campus.
+        </p>
+
+    </div>
+</section>
+
+
+
+<!-- =========================================
+     SEARCH & FILTER
+========================================= -->
+
+<section class="event_search_section">
+
+    <div class="event_search_container">
+
+        <div class="event_search_box">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search events..."
+            >
+
+        </div>
+
+
+        <div class="event_filters">
+            <select id="categoryFilter">
+
+                <option value="all"> All Categories</option>
+                <option value="academic"> Academic</option>
+                <option value="social">Social
+                </option>
+
+                <option value="sports">
+                    Sports
+                </option>
+
+                <option value="workshops">
+                    Workshops
+                </option>
+
+                <option value="competitions">
+                    Competitions
+                </option>
+
+                <option value="seminars">
+                    Seminars
+                </option>
+
+                <option value="other">
+                    Other
+                </option>
+
+            </select>
+
+
+            <select id="departmentFilter">
+
+                <option value="all">
+                    All Departments
+                </option>
+
+                <option value="computer">
+                    Computer Science
+                </option>
+
+                <option value="business">
+                    Business
+                </option>
+
+                <option value="engineering">
+                    Engineering
+                </option>
+
+                <option value="arts">
+                    Arts
+                </option>
+
+                <option value="science">
+                    Science
+                </option>
+
+            </select>
+
+
+            <button id="searchButton">
+                Search
+            </button>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- =========================================
+     UPCOMING EVENTS
+========================================= -->
+
+<section class="upcoming_events">
+    <div class="section_heading">
+
+        <p class="section_label">
+            WHAT'S COMING UP
+        </p>
+
+        <h2>
+            Upcoming <span>Events</span>
+        </h2>
+
+        <p>
+            Find an event that interests you
+            and get involved.
+        </p>
+
+    </div>
+
+
+    <div class="events_grid">
+
+
+        <!-- EVENT 1 -->
+
+        <article class="event-card"
+                 data-category="academic"
+                 data-department="computer">
+
+            <div class="event_image">
+
+                <img src="code_stars_photos/events.png"
+                     alt="Technology seminar">
+
+                <span class="event_category">
+                    Academic
+                </span>
+
+            </div>
+
+
+            <div class="event_content">
+
+                <div class="event_date">
+
+                    <i class="fa-regular fa-calendar"></i>
+
+                    October 05, 2026
+
+                </div>
+
+                <h3>
+                    Future of Technology Seminar
+                </h3>
+
+                <p class="event-description">
+
+                    Explore emerging technologies and
+                    how they are shaping the future.
+
+                </p>
+
+
+                <div class="event_location">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    Main Auditorium
+
+                </div>
+
+
+                <a href="#"
+                   class="event_button">
+
+                    View Details
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- EVENT 2 -->
+
+        <article class="event-card"
+                 data-category="sports"
+                 data-department="all">
+
+            <div class="event_image">
+
+                <img src="code_stars_photos/events5.png"
+                     alt="Campus football">
+
+                <span class="event_category">
+                    Sports
+                </span>
+
+            </div>
+
+
+            <div class="event_content">
+
+                <div class="event_date">
+
+                    <i class="fa-regular fa-calendar"></i>
+
+                    October 10, 2026
+
+                </div>
+
+                <h3>
+                    Interdepartmental Football
+                </h3>
+
+                <p class="event-description">
+
+                    Watch departments compete for
+                    the campus football championship.
+
+                </p>
+
+
+                <div class="event_location">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    University Sports Field
+
+                </div>
+
+
+                <a href="#"
+                   class="event_button">
+
+                    View Details
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- EVENT 3 -->
+
+        <article class="event-card"
+                 data-category="workshops"
+                 data-department="engineering">
+
+            <div class="event_image">
+
+                <img src="code_stars_photos/events1.png"
+                     alt="Engineering workshop">
+
+                <span class="event_category">
+                    Workshop
+                </span>
+
+            </div>
+
+
+            <div class="event_content">
+
+                <div class="event_date">
+
+                    <i class="fa-regular fa-calendar"></i>
+
+                    October 15, 2026
+
+                </div>
+
+                <h3>
+                    Engineering Innovation Workshop
+                </h3>
+
+                <p class="event-description">
+
+                    A hands-on workshop focused on
+                    creativity, engineering and innovation.
+
+                </p>
+
+
+                <div class="event_location">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    Engineering Hall
+
+                </div>
+
+
+                <a href="#"
+                   class="event_button">
+
+                    View Details
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- EVENT 4 -->
+
+        <article class="event-card"
+                 data-category="social"
+                 data-department="all">
+
+            <div class="event_image">
+
+                <img src="code_stars_photos/events4.png"
+                     alt="Student social event">
+
+                <span class="event_category">
+                    Social
+                </span>
+
+            </div>
+
+
+            <div class="event_content">
+
+                <div class="event_date">
+
+                    <i class="fa-regular fa-calendar"></i>
+
+                    October 20, 2026
+
+                </div>
+
+                <h3>
+                    Campus Social Night
+                </h3>
+
+                <p class="event-description">
+
+                    Meet new people, enjoy music and
+                    spend an evening with the campus community.
+
+                </p>
+
+
+                <div class="event_location">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    Student Centre
+
+                </div>
+
+
+                <a href="#"
+                   class="event_button">
+
+                    View Details
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- EVENT 5 -->
+
+        <article class="event-card"
+                 data-category="seminars"
+                 data-department="business">
+
+            <div class="event_image">
+
+                <img src="code_stars_photos/events2.png"
+                     alt="Business seminar">
+
+                <span class="event_category">
+                    Seminar
+                </span>
+
+            </div>
+
+
+            <div class="event_content">
+
+                <div class="event_date">
+
+                    <i class="fa-regular fa-calendar"></i>
+
+                    October 24, 2026
+
+                </div>
+
+                <h3>
+                    Student Entrepreneurship Seminar
+                </h3>
+
+                <p class="event-description">
+
+                    Learn about entrepreneurship,
+                    business ideas and building a startup.
+
+                </p>
+
+
+                <div class="event_location">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    Business Faculty
+
+                </div>
+
+
+                <a href="#"
+                   class="event_button">
+
+                    View Details
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- EVENT 6 -->
+
+        <article class="event-card"
+                 data-category="competitions"
+                 data-department="science">
+
+            <div class="event_image">
+
+                <img src="code_stars_photos/events6.png"
+                     alt="Science competition">
+
+                <span class="event_category">
+                    Competition
+                </span>
+
+            </div>
+
+
+            <div class="event_content">
+
+                <div class="event_date">
+
+                    <i class="fa-regular fa-calendar"></i>
+
+                    October 28, 2026
+
+                </div>
+
+                <h3>
+                    Campus Science Challenge
+                </h3>
+
+                <p class="event-description">
+
+                    Test your knowledge and compete
+                    with students from across campus.
+
+                </p>
+
+
+                <div class="event_location">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    Science Complex
+
+                </div>
+
+
+                <a href="#"
+                   class="event_button">
+
+                    View Details
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+            </div>
+
+        </article>
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     NO RESULTS
+========================================= -->
+
+<div id="noResults"
+     class="no_results">
+    <i class="fa-regular fa-face-frown"></i>
+
+    <h3>
+        No Events Found
+    </h3>
+
+    <p>
+        Try changing your search or filters.
+    </p>
+</div>
+
+
+
+<!-- =========================================
+     CTA
+========================================= -->
+
+<section class="events_cta">
+
+    <div>
+        <p class="section_label">
+            GET INVOLVED
+        </p>
+
+        <h2>
+            Don't Just Watch.
+            <span>Participate.</span>
+        </h2>
+
+        <p>
+            Campus life becomes more meaningful
+            when you become part of it.
+        </p>
+
+        <a href="index.html#contact">
+            Contact Us
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+    </div>
+</section>
+
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+
+        <div class="footer-brand">
+
+            <img src="code_stars_photos/code-stars_logo.png"
+                 alt="Campus Events Logo">
+
+            <p>
+                Connecting students with
+                experiences that matter.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <h3>
+                Quick Links
+            </h3>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+            <a href="events.html">
+                Events
+            </a>
+
+            <a href="index.html#gallery">
+                Gallery
+            </a>
+
+            <a href="index.html#contact">
+                Contact
+            </a>
+
+        </div>
+
+
+        <div class="social-links">
+
+            <h3>
+                Follow Us
+            </h3>
+
+            <div>
+
+                <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+        <p>
+            © 2026 Campus Events. All rights reserved.
+        </p>
+    </div>
+
+</footer>
+
+
+
+<script src="codestars-js/campus_events.js"></script>
+</body>
+</html>

@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration | Campus Events</title>
+    <link rel="stylesheet" href="codesstars-styles/campus_registration.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVIGATION
+    ========================= -->
+
+    <header class="registration_navigation">
+        <div class="registration_nav_container">
+            <div class="registration_logo">
+                <img src="code_stars_photos/code-stars_logo.png"
+                     alt="Campus Logo">
+            </div>
+
+            <button class="registration_menu_button"
+                    id="registrationMenuButton">
+                ☰
+            </button>
+
+            <nav class="registration_links">
+
+                <a href="collage-event-homepage.html">Home</a>
+                <a href="about_campus.html">About</a>
+                <a href="campus_events.html">Events</a>
+                <a href="campus_gallary.html">Gallery</a>
+                <a href="campus_feedback.html">Feedback</a>
+                <a href="compus_contact.html">Contact</a>
+
+            </nav>
+
+            <div class="registration_nav_button">
+
+                <button onclick="window.location.href='events.html'">
+                    Explore Events
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         REGISTRATION HERO
+    ========================= -->
+
+    <section class="registration_hero">
+
+        <div class="registration_hero_content">
+
+            <p class="registration_label">
+                EVENT REGISTRATION
+            </p>
+
+            <h1>
+                Reserve Your <span>Spot.</span>
+            </h1>
+
+            <p>
+                Join exciting campus events, meet new people,
+                learn new skills and create unforgettable
+                experiences.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         REGISTRATION SECTION
+    ========================= -->
+
+    <section class="registration_section">
+
+        <div class="registration_container">
+
+
+            <!-- LEFT SIDE -->
+
+            <div class="registration_information">
+
+                <p class="registration_label">
+                    JOIN THE EXPERIENCE
+                </p>
+
+                <h2>
+                    Register For Your
+                    <span>Next Event.</span>
+                </h2>
+
+                <p class="registration_intro">
+                    Fill in your information below to register
+                    for a campus event. Make sure the details
+                    you provide are correct.
+                </p>
+
+
+                <div class="registration_benefits">
+
+                    <div class="registration_benefit">
+
+                        <div class="benefit_icon">
+                            ✓
+                        </div>
+
+                        <div>
+                            <h3>Easy Registration</h3>
+
+                            <p>
+                                Register for events in just a
+                                few simple steps.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="registration_benefit">
+
+                        <div class="benefit_icon">
+                            ✓
+                        </div>
+
+                        <div>
+                            <h3>Event Updates</h3>
+
+                            <p>
+                                Receive important information
+                                about your registered event.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="registration_benefit">
+
+                        <div class="benefit_icon">
+                            ✓
+                        </div>
+
+                        <div>
+                            <h3>Campus Community</h3>
+
+                            <p>
+                                Connect with students and
+                                participate in campus activities.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT SIDE FORM -->
+
+            <div class="registration_form_box">
+
+                <div class="registration_form_header">
+
+                    <h3>
+                        Create Your Registration
+                    </h3>
+
+                    <p>
+                        Complete the form below.
+                    </p>
+
+                </div>
+
+
+                <form id="registrationForm">
+
+
+                    <div class="registration_form_row">
+
+                        <div class="registration_form_group">
+
+                            <label for="firstName">
+                                First Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="firstName"
+                                placeholder="Enter your first name"
+                            >
+                        </div>
+
+                        <div class="registration_form_group">
+
+                            <label for="lastName">
+                                Last Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="lastName"
+                                placeholder="Enter your last name"
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="registration_form_group">
+
+                        <label for="registrationEmail">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="registrationEmail"
+                            placeholder="Enter your email"
+                        >
+
+                    </div>
+
+
+                    <div class="registration_form_group">
+
+                        <label for="phoneNumber">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phoneNumber"
+                            placeholder="Enter your phone number"
+                        >
+
+                    </div>
+
+
+                    <div class="registration_form_group">
+
+                        <label for="studentId">
+                            Student ID
+                        </label>
+
+                        <input
+                            type="text"
+                            id="studentId"
+                            placeholder="Enter your student ID"
+                        >
+
+                    </div>
+
+
+                    <div class="registration_form_group">
+
+                        <label for="eventSelect">
+                            Select Event
+                        </label>
+
+                        <select id="eventSelect">
+
+                            <option value="">
+                                Choose an event
+                            </option>
+
+                            <option value="tech">
+                                Campus Tech Conference
+                            </option>
+
+                            <option value="sports">
+                                Inter-Campus Sports Day
+                            </option>
+
+                            <option value="music">
+                                Campus Music Night
+                            </option>
+
+                            <option value="career">
+                                Career & Networking Fair
+                            </option>
+
+                            <option value="workshop">
+                                Creative Skills Workshop
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="registration_form_group">
+
+                        <label for="department">
+                            Department
+                        </label>
+
+                        <input
+                            type="text"
+                            id="department"
+                            placeholder="Enter your department"
+                        >
+
+                    </div>
+
+
+                    <div class="registration_form_group">
+
+                        <label for="registrationMessage">
+                            Additional Message
+                        </label>
+
+                        <textarea
+                            id="registrationMessage"
+                            rows="4"
+                            maxlength="500"
+                            placeholder="Anything you would like us to know?"
+                        ></textarea>
+
+                        <div class="registration_character_count">
+                            <span id="registrationCharacterCount">
+                                0
+                            </span>
+                            / 500
+                        </div>
+
+                    </div>
+
+
+                    <div class="registration_checkbox">
+
+                        <input
+                            type="checkbox"
+                            id="registrationAgreement"
+                        >
+
+                        <label for="registrationAgreement">
+                            I confirm that the information I provided
+                            is correct.
+                        </label>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="registration_submit_button"
+                    >
+                        Complete Registration
+                        <span>→</span>
+                    </button>
+
+
+                    <p
+                        id="registrationMessageDisplay"
+                        class="registration_message"
+                    ></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =========================
+         BLACK INFORMATION SECTION
+    ========================= -->
+
+    <section class="registration_banner">
+
+        <div class="registration_banner_content">
+
+            <p class="registration_label">
+                CAMPUS EVENTS
+            </p>
+
+            <h2>
+                Your Next Experience
+                <span>Starts Here.</span>
+            </h2>
+
+            <p>
+                Don't just hear about campus events.
+                Be part of them.
+            </p>
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
+
+    <footer class="registration_footer">
+
+        <div class="registration_footer_container">
+            <div class="registration_footer_about">
+                <img
+                    src="code_stars_photos/code-stars_logo.png"
+                    alt="Campus Logo"
+                >
+
+                <p>
+                    Connecting students through events,
+                    activities and unforgettable campus
+                    experiences.
+                </p>
+
+            </div>
+
+
+            <div class="registration_footer_links">
+                <h3>Quick Links</h3>
+                <a href="collage-event-homepage.html">Home</a>
+                <a href="about_campus.html">About</a>
+                <a href="campus_events.html">Events</a>
+                <a href="campus_gallary.html">Gallery</a>
+            </div>
+
+
+            <div class="registration_footer_links">
+                <h3>Support</h3>
+                <a href="campus_feedback.html">Feedback</a>
+                <a href="compus_contact.html">Contact</a>
+                <a href="campus_registration.html">Registration</a>
+            </div>
+        </div>
+
+
+        <div class="registration_footer_bottom">
+            <p>
+                © 2026 Campus Events. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+
+    <script src="codestars-js/campus_registration.js"></script>
+</body>
+</html>
